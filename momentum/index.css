@@ -1,0 +1,106 @@
+body{
+    background-color :#2c3e50;
+    color :  #ecf0f1;
+}
+
+::-webkit-scrollbar{width: 16px;}
+::-webkit-scrollbar-track {background-color:transparent;}
+::-webkit-scrollbar-thumb {background-color: #ecf0f1;;border-radius: 10px;}
+::-webkit-scrollbar-thumb:hover {background: white; }
+::-webkit-scrollbar-button:start:decrement,::-webkit-scrollbar-button:end:increment {
+width:16px;height:16px;background:transparent;} 
+
+.bgImage{
+    position : absolute;
+    top : 0;
+    left : 0;
+    width : 100%;
+    height : 100%;
+    z-index : -1;
+    animation : fadeIn 0.5s linear;
+}
+
+.typebox{
+    position : absolute;
+    top : 50%;
+    left : 50%;
+    width : 600px;
+    height : 300px;
+    margin : -200px 0px 0px -300px;
+
+    text-align : center;
+}
+
+.js-clock{
+    opacity: 0.8;
+    font-size : 50pt;
+    margin : 0px 0px 0px 0px;
+}
+
+.js-clock h1{
+    margin : 0px 0px 0px 0px;
+}
+
+
+.form,
+.greetings {
+    display : none;
+}
+
+.showing{
+    display : block;
+    font-size : 30pt;
+}
+
+
+@keyframes fadeIn{
+    from {
+        opacity : 0;
+    }
+
+    to{
+        opacity : 1;
+    }
+}
+
+form input{
+    background-color: transparent;
+    border-left-width : 0;
+    border-right-width : 0;
+    border-top-width : 0;
+    border-bottom-width : 1 solid white;
+    outline : none;
+    width : 300px;
+    height : 50px;
+    color : white;
+    font-size : 20pt;
+}
+
+form input::placeholder{
+    color : white;
+    opacity : 0.7;
+    font-size : 20pt;
+}
+
+
+
+.js-toDoList button{
+    width : 20px;
+    height : 20px;
+    background : url("./images/checkBtn.png");
+    background-size : 18px 18px;
+    background-repeat: no-repeat;
+    border : none;
+}
+
+.js-toDoList li {
+    list-style-type: none;
+}
+
+.js-toDoList{
+    text-align: left;
+    padding-left : 110px;
+    height : 200px;
+    width : 350px;
+    overflow-y : scroll;
+}

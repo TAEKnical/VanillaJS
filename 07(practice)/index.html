@@ -1,31 +1,46 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Something</title>
-        <link rel="stylesheet" href="./index.css">
-    </head>
-    <body>
+
+<head>
+    <title>Something</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+    <div class="typebox">
         <div class="js-clock">
             <h1>00:00</h1>
         </div>
 
-        <form class="js-form form">
-            <input type="text" placeholder="What is your name?">
-        </form>
+        <div class="js-form form">
+            <form>
+                <input type="text" placeholder="What is your name?">
+            </form>
+        </div>
 
-        <h4 class="js-greetings greetings"></h4>
-        
-        <form class="js-toDoForm">
-            <input type="text" placeholder = "Write a to do"/>
-        </form>
-        <ul class="js-toDoList">
+        <div class="js-greetings greetings">
+            <h4></h4>
+        </div>
 
-        </ul>
-        <span class="js-weather"></span>
-        <script src = "./clock.js"></script>
-        <script src = "./greeting.js"></script>
-        <script src = "./todo.js"></script>
-        <script src = "./bg.js"></script>
-        <script src = "./weather.js"></script>
-    </body>
+        <div class="js-toDoForm">
+            <form>
+                <input type="text" placeholder="Write a to do" />
+            </form>
+        </div>
+
+        <div class="js-toDoList">
+            <ul></ul>
+        </div>
+
+        <div class="js-weather">
+            <span></span>
+        </div>
+    </div>
+    <script src="./clock.js"></script>
+    <script src="./greeting.js"></script>
+    <script src="./todo.js"></script>
+    <script src="./bg.js"></script>
+    <script src="./weather.js"></script>
+</body>
+
 </html>
